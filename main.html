@@ -3,98 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>프로젝트 화면</title>
+  <title>순천향대학교 청소년 정보보호 페스티벌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
   <style>
-    /* 기본 리셋 */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f5f5;
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #fff;
+      color: #333;
     }
-    /* 네비게이션 바 */
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: #fff;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .main-section {
       display: flex;
       justify-content: center;
-      transition: transform 0.3s ease;
-      z-index: 1000;
+      margin: 40px 0;
     }
-    nav.hidden {
-      transform: translateY(-100%);
+    .main-box {
+      background: #f7f7f7;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 500px;
+      text-align: center;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
+    .main-box h2 {
+      color: #c0392b;
+      margin-bottom: 20px;
+      font-size: 20px;
     }
-    nav ul li {
-      margin: 0 1rem;
+    .main-box p {
+      margin: 5px 0;
+      font-size: 15px;
+      line-height: 1.5;
     }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-    }
-    nav ul li a:hover {
-      background-color: #555;
-    }
-    /* 메인 컨텐츠 */
-    main {
-      padding: 6rem 2rem 2rem;
-    }
-    .page {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    footer {
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/uploads">Uploads</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
+
+  <header>
+    <h1>순천향대학교 청소년 정보보호 페스티벌</h1>
+  </header>
+
+  <nav>
+    <a href="#">대회 소개</a>
+    <a href="#">포스터</a>
+    <a href="#">역대 수상자</a>
+    <a href="#">참가신청</a>
   </nav>
-  <main>
-    <section class="page">
-      <h1>프로젝트 화면 예시</h1>
-      <p>프로젝트 파일에 있는 디자인을 참고하여 작성된 기본 레이아웃입니다. 스크롤 시 네비게이션 바가 사라지고, 상단으로 스크롤하면 다시 나타납니다.</p>
-    </section>
-  </main>
-  <script>
-    // 스크롤 시 네비게이션 보이기/숨기기
-    let lastScroll = 0;
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      const current = window.pageYOffset;
-      if (current <= 0) {
-        navbar.classList.remove('hidden');
-        return;
-      }
-      if (current > lastScroll && !navbar.classList.contains('hidden')) {
-        // 아래로 스크롤
-        navbar.classList.add('hidden');
-      } else if (current < lastScroll && navbar.classList.contains('hidden')) {
-        // 위로 스크롤
-        navbar.classList.remove('hidden');
-      }
-      lastScroll = current;
-    });
-  </script>
+
+  <section class="main-section">
+    <div class="main-box">
+      <h2>제23회 청소년 정보보호 페스티벌<br><small>(23nd Youth Information Security Festival)</small></h2>
+      <p><strong>신청 접수</strong><br>https://yisf-sch.github.io/main.html</p>
+      <p><strong>신청 기간</strong><br>07월 14일(월) 10:00 ~ 08월 01일(금) 22:00</p>
+      <p><strong>예선 (Online)</strong><br>08월 08일(금) 21:00 ~ 08월 10일(일) 09:00</p>
+      <p><strong>본선 (Offline)</strong><br>08월 17일(일) 10:00 ~ 18:00<br>at 순천향대학교 향설 1관 RC208</p>
+    </div>
+  </section>
+
+  <footer>
+    주최 : 순천향대학교 정보보호학과 <br>
+
+  </footer>
+
 </body>
 </html>
