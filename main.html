@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로젝트 화면</title>
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+    /* 네비게이션 바 */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    nav.hidden {
+      transform: translateY(-100%);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+    }
+    /* 메인 컨텐츠 */
+    main {
+      padding: 6rem 2rem 2rem;
+    }
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/uploads">Uploads</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="page">
+      <h1>프로젝트 화면 예시</h1>
+      <p>프로젝트 파일에 있는 디자인을 참고하여 작성된 기본 레이아웃입니다. 스크롤 시 네비게이션 바가 사라지고, 상단으로 스크롤하면 다시 나타납니다.</p>
+    </section>
+  </main>
+  <script>
+    // 스크롤 시 네비게이션 보이기/숨기기
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      const current = window.pageYOffset;
+      if (current <= 0) {
+        navbar.classList.remove('hidden');
+        return;
+      }
+      if (current > lastScroll && !navbar.classList.contains('hidden')) {
+        // 아래로 스크롤
+        navbar.classList.add('hidden');
+      } else if (current < lastScroll && navbar.classList.contains('hidden')) {
+        // 위로 스크롤
+        navbar.classList.remove('hidden');
+      }
+      lastScroll = current;
+    });
+  </script>
+</body>
+</html>
