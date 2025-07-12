@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참가 신청 - YISF 청소년정보보호페스티벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pretendard': ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#020618',
+                        'secondary': '#45556c',
+                        'background': '#f9fafb',
+                        'border': '#cad5e2'
+                    },
+                    fontSize: {
+                        'display': ['3.5rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h1': ['3rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h2': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'h3': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'body-lg': ['1.5rem', { lineHeight: '1.2', letterSpacing: '-0.6px' }],
+                        'body': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.5px' }],
+                        'caption': ['1.125rem', { lineHeight: '1.2', letterSpacing: '-0.5px' }]
+                    },
+                    spacing: {
+                        '15': '3.75rem',
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                        '25': '6.25rem',
+                        '30': '7.5rem',
+                        '37.5': '9.375rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-highlight {
+            background: linear-gradient(135deg, #58c1ff 0%, #8b9fe9 25.5%, #e681d8 51.5%, #fe96a3 75.75%, #ffd1ce 100%);
+        }
+    </style>
+</head>
+<body class="font-pretendard bg-background text-primary">
+    <nav class="bg-white border-b border-border/30 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto flex justify-between items-center py-6">
+                <a href="index.html" class="text-h3 font-black text-primary">YISF</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">홈</a>
+                    <div class="relative group">
+                        <button class="text-body font-medium text-secondary hover:text-primary transition-colors flex items-center">
+                            대회 소개
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-border/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="intro.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">대회 소개</a>
+                            <a href="schedule.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">대회 일정</a>
+                            <a href="organization.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">조직도</a>
+                            <a href="awards.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">수상 내역</a>
+                        </div>
+                    </div>
+                    <a href="poster.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">포스터</a>
+                    <a href="winners.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">역대 수상자</a>
+                    <a href="apply.html" class="text-body font-medium text-primary border-b-2 border-primary">참가 신청</a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+        <div class="max-w-6xl mx-auto">
+            <header class="py-20 text-center">
+                <h1 class="text-h1 md:text-display font-black text-primary mb-8">참가 신청</h1>
+                <p class="text-body-lg font-medium text-secondary max-w-4xl mx-auto">YISF 청소년정보보호페스티벌에 참가하여 여러분의 실력을 펼쳐보세요</p>
+            </header>
+
+            <!-- 신청 기간 안내 -->
+            <section class="my-30">
+                <div class="gradient-highlight rounded-3xl p-12 text-center text-white">
+                    <h2 class="text-h2 font-bold mb-6">신청 접수 기간</h2>
+                    <div class="text-display font-black mb-4">2025. 07. 13 ~ 08. 01</div>
+                    <p class="text-body-lg font-medium opacity-90 mb-8">
+                        온라인 접수만 가능하며, 마감일 23:59까지 제출해야 합니다
+                    </p>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-h3 font-bold mb-2">D-45</div>
+                                <p class="text-body font-medium opacity-90">신청 마감까지</p>
+                            </div>
+                            <div>
+                                <div class="text-h3 font-bold mb-2">무료</div>
+                                <p class="text-body font-medium opacity-90">참가비</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+                    
+                </div>
+            </section>
+
+            <!-- 신청 절차 -->
+            <section class="my-30">
+                <h2 class="text-h2 font-bold text-primary mb-12 text-center">신청 절차</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-body-lg">1</span>
+                        </div>
+                        <h3 class="text-h3 font-bold text-primary mb-3">서류 준비</h3>
+                        <p class="text-body font-medium text-secondary">필요 서류를 준비합니다</p>
+                    </div>
+
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-body-lg">2</span>
+                        </div>
+                        <h3 class="text-h3 font-bold text-primary mb-3">온라인 신청</h3>
+                        <p class="text-body font-medium text-secondary">공식 홈페이지에서 신청서를 작성하고 제출합니다</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-body-lg">2</span>
+                        </div>
+                        <h3 class="text-h3 font-bold text-primary mb-3">승인 대기</h3>
+                        <p class="text-body font-medium text-secondary">서류가 승인 될때까지 대기합니다</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-body-lg">3</span>
+                        </div>
+                        <h3 class="text-h3 font-bold text-primary mb-3">접수 완료</h3>
+                        <p class="text-body font-medium text-secondary">접수 확인 메일을 받고 대회 준비를 시작합니다</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 필요 서류
+            <section class="my-30">
+                <div class="bg-white rounded-3xl p-12 border border-border/30">
+                    <h2 class="text-h2 font-bold text-primary mb-8 text-center">제출 서류</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-h3 font-bold text-primary mb-6">필수 서류</h3>
+                            <ul class="space-y-4">
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    참가 신청서 (온라인 작성)
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    재학증명서 (팀원 전체)
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    학부모 동의서 (미성년자)
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    개인정보 수집·이용 동의서
+                                </li>
+                            </ul>
+                        </div> -->
+
+                        <div>
+                            <h3 class="text-h3 font-bold text-primary mb-6">선택 서류</h3>
+                            <ul class="space-y-4">
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    정보보호 관련 수상 경력
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    정보보호 관련 자격증
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    프로그래밍 대회 참가 경력
+                                </li>
+                                <li class="text-body font-medium text-secondary flex items-start">
+                                    <span class="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                    포트폴리오 (선택사항)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 신청 폼 -->
+            <section class="my-30">
+                <div class="bg-white rounded-3xl p-12 border border-border/30">
+                    <h2 class="text-h2 font-bold text-primary mb-8 text-center">온라인 신청</h2>
+                    <form class="space-y-8">
+                        <!-- 팀 정보 -->
+                        <div>
+                            <h3 class="text-h3 font-bold text-primary mb-6">팀 정보</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">팀명 *</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="팀명을 입력하세요">
+                                </div>
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">소속 학교 *</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="학교명을 입력하세요">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 팀장 정보 -->
+                        <div>
+                            <h3 class="text-h3 font-bold text-primary mb-6">팀장 정보</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">이름 *</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="팀장 이름">
+                                </div>
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">학년 *</label>
+                                    <select class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary">
+                                        <option>학년을 선택하세요</option>
+                                        <option>중학교 1학년</option>
+                                        <option>중학교 2학년</option>
+                                        <option>중학교 3학년</option>
+                                        <option>고등학교 1학년</option>
+                                        <option>고등학교 2학년</option>
+                                        <option>고등학교 3학년</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">연락처 *</label>
+                                    <input type="tel" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="010-0000-0000">
+                                </div>
+                                <div>
+                                    <label class="block text-body font-bold text-primary mb-2">이메일 *</label>
+                                    <input type="email" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="example@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 팀원 정보 -->
+                        <div>
+                            <h3 class="text-h3 font-bold text-primary mb-6">팀원 정보</h3>
+                            
+                            <!-- 팀원 1 -->
+                            <div class="mb-6">
+                                <h4 class="text-body font-bold text-primary mb-4">팀원 1</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <input type="text" class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="이름 *">
+                                    <select class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary">
+                                        <option>학년 선택 *</option>
+                                        <option>중학교 1학년</option>
+                                        <option>중학교 2학년</option>
+                                        <option>중학교 3학년</option>
+                                        <option>고등학교 1학년</option>
+                                        <option>고등학교 2학년</option>
+                                        <option>고등학교 3학년</option>
+                                    </select>
+                                    <input type="tel" class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="연락처 *">
+                                </div>
+                            </div>
+
+                            <!-- 팀원 2 -->
+                            <div>
+                                <h4 class="text-body font-bold text-primary mb-4">팀원 2</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <input type="text" class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="이름 *">
+                                    <select class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary">
+                                        <option>학년 선택 *</option>
+                                        <option>중학교 1학년</option>
+                                        <option>중학교 2학년</option>
+                                        <option>중학교 3학년</option>
+                                        <option>고등학교 1학년</option>
+                                        <option>고등학교 2학년</option>
+                                        <option>고등학교 3학년</option>
+                                    </select>
+                                    <input type="tel" class="px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="연락처 *">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 참가 동기 -->
+                        <div>
+                            <label class="block text-body font-bold text-primary mb-2">참가 동기 *</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="YISF 청소년정보보호페스티벌에 참가하게 된 동기를 작성해주세요 (500자 이내)"></textarea>
+                        </div>
+
+                        <!-- 정보보호 경험 -->
+                        <div>
+                            <label class="block text-body font-bold text-primary mb-2">정보보호 관련 경험</label>
+                            <textarea rows="3" class="w-full px-4 py-3 border border-border rounded-xl focus:outline-none focus:border-primary" placeholder="정보보호 관련 학습 경험, 프로젝트, 수상 경력 등을 자유롭게 작성해주세요 (선택사항)"></textarea>
+                        </div>
+
+                        <!-- 동의사항 -->
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <input type="checkbox" id="agree1" class="mt-1 mr-3">
+                                <label for="agree1" class="text-body font-medium text-secondary">개인정보 수집·이용에 동의합니다. (필수)</label>
+                            </div>
+                            <div class="flex items-start">
+                                <input type="checkbox" id="agree2" class="mt-1 mr-3">
+                                <label for="agree2" class="text-body font-medium text-secondary">대회 관련 안내 메일 수신에 동의합니다. (필수)</label>
+                            </div>
+                            <div class="flex items-start">
+                                <input type="checkbox" id="agree3" class="mt-1 mr-3">
+                                <label for="agree3" class="text-body font-medium text-secondary">대회 사진 및 영상 촬영·활용에 동의합니다. (선택)</label>
+                            </div>
+                        </div>
+
+                        <!-- 제출 버튼 -->
+                        <div class="text-center pt-8">
+                            <button type="submit" class="gradient-highlight text-white font-bold py-4 px-12 rounded-2xl text-body-lg hover:shadow-lg transition-all duration-300">
+                                참가 신청 제출
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- 문의사항 -->
+            <section class="my-30">
+                <div class="bg-primary rounded-3xl p-12 text-center text-white">
+                    <h2 class="text-h2 font-bold mb-6">문의사항이 있으신가요?</h2>
+                    <p class="text-body-lg font-medium mb-8 max-w-3xl mx-auto opacity-90">
+                        참가 신청 관련 궁금한 점이 있으시면 언제든지 문의해 주세요
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                            <h3 class="text-h3 font-bold mb-3">📧</h3>
+                            <h4 class="text-body font-bold mb-2">이메일</h4>
+                            <p class="text-body font-medium opacity-90">yisf@sch.ac.kr</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                            <h3 class="text-h3 font-bold mb-3">📞</h3>
+                            <h4 class="text-body font-bold mb-2">전화</h4>
+                            <p class="text-body font-medium opacity-90">041-530-1234</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                            <h3 class="text-h3 font-bold mb-3">🕒</h3>
+                            <h4 class="text-body font-bold mb-2">운영시간</h4>
+                            <p class="text-body font-medium opacity-90">평일 09:00~18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-border/30 mt-30">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto py-12 text-center">
+                <p class="text-body font-medium text-secondary">© 2025 YISF 청소년정보보호페스티벌. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대회 일정 - YISF 청소년정보보호페스티벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pretendard': ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#020618',
+                        'secondary': '#45556c',
+                        'background': '#f9fafb',
+                        'border': '#cad5e2'
+                    },
+                    fontSize: {
+                        'display': ['3.5rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h1': ['3rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h2': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'h3': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'body-lg': ['1.5rem', { lineHeight: '1.2', letterSpacing: '-0.6px' }],
+                        'body': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.5px' }],
+                        'caption': ['1.125rem', { lineHeight: '1.2', letterSpacing: '-0.5px' }]
+                    },
+                    spacing: {
+                        '15': '3.75rem',
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                        '25': '6.25rem',
+                        '30': '7.5rem',
+                        '37.5': '9.375rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-highlight {
+            background: linear-gradient(135deg, #58c1ff 0%, #8b9fe9 25.5%, #e681d8 51.5%, #fe96a3 75.75%, #ffd1ce 100%);
+        }
+    </style>
+</head>
+<body class="font-pretendard bg-background text-primary">
+    <nav class="bg-white border-b border-border/30 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto flex justify-between items-center py-6">
+                <a href="index.html" class="text-h3 font-black text-primary">YISF</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">홈</a>
+                    <div class="relative group">
+                        <button class="text-body font-medium text-primary border-b-2 border-primary flex items-center">
+                            대회 소개
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-border/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="intro.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">대회 소개</a>
+                            <a href="schedule.html" class="block px-4 py-3 text-body font-medium text-primary bg-background">대회 일정</a>
+                            <a href="organization.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">조직도</a>
+                            <a href="awards.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">수상 내역</a>
+                        </div>
+                    </div>
+                    <a href="poster.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">포스터</a>
+                    <a href="winners.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">역대 수상자</a>
+                    <a href="apply.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">참가 신청</a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+        <div class="max-w-6xl mx-auto">
+            <header class="py-20 text-center">
+                <h1 class="text-h1 md:text-display font-black text-primary mb-8">대회 일정</h1>
+                <p class="text-body-lg font-medium text-secondary max-w-4xl mx-auto">신청 접수부터 시상식까지의 전체 일정을 안내합니다</p>
+            </header>
+            <section class="my-30">
+                <div class="bg-white rounded-3xl p-9 border border-border/30 max-w-4xl mb-12">
+                    <h3 class="text-h3 font-bold text-primary mb-9">신청 접수</h3>
+                    <div class="text-h2 font-extrabold text-primary mb-5">2025년 7월 14일 (월) 10:00 ~ 2025년 8월 1일 (금) 22:00</div>
+                    <div class="text-body-lg font-medium text-secondary mb-6">https://yisf-sch.github.io/main.html 에서 온라인 접수</div>
+                    <div class="bg-background rounded-2xl p-6">
+                        <h4 class="text-h3 font-bold text-primary mb-4">접수 안내</h4>
+                        <ul class="space-y-3">
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                개인 또는 팀 단위로 신청 가능 (팀 최대 3명)
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                전국 중고등학교 재학생 대상
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                온라인 신청서 작성 및 제출
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                신청 마감일까지 접수 완료 필수
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-white rounded-3xl p-9 border border-border/30">
+                        <div class="flex justify-between items-center mb-9">
+                            <h3 class="text-h3 font-bold text-primary">예선</h3>
+                            <span class="text-body-lg font-medium text-secondary">36시간</span>
+                        </div>
+                        <div class="text-h2 font-extrabold text-primary mb-5">2025년 8월 8일 (금) 21:00 ~<br>2025년 8월 10일 (일) 09:00</div>
+                        <div class="text-body-lg font-medium text-secondary mb-6">순천향대학교 정보보호학과 정보보호시험장 (원격)</div>
+                        <div class="bg-background rounded-2xl p-6">
+                            <h4 class="text-body font-bold text-primary mb-3">예선 세부사항</h4>
+                            <ul class="space-y-2">
+                                <li class="text-caption font-medium text-secondary">• CTF(Capture The Flag) 형식</li>
+                                <li class="text-caption font-medium text-secondary">• 온라인 원격 진행</li>
+                                <li class="text-caption font-medium text-secondary">• 웹, 시스템, 암호, 포렌식 등 다양한 분야</li>
+                                <li class="text-caption font-medium text-secondary">• 상위 팀 본선 진출</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-9 border border-border/30">
+                        <div class="flex justify-between items-center mb-9">
+                            <h3 class="text-h3 font-bold text-primary">본선</h3>
+                            <span class="text-body-lg font-medium text-secondary">8시간</span>
+                        </div>
+                        <div class="text-h2 font-extrabold text-primary mb-5">2025년 8월 17일 (월)<br>10:00 ~ 18:00</div>
+                        <div class="text-body-lg font-medium text-secondary mb-6">순천향대학교 향설생활관1 RC208</div>
+                        <div class="bg-background rounded-2xl p-6">
+                            <h4 class="text-body font-bold text-primary mb-3">본선 세부사항</h4>
+                            <ul class="space-y-2">
+                                <li class="text-caption font-medium text-secondary">• 오프라인 현장 진행</li>
+                                <li class="text-caption font-medium text-secondary">• 실시간 문제 해결 경쟁</li>
+                                <li class="text-caption font-medium text-secondary">• 고난이도 보안 문제</li>
+                                <li class="text-caption font-medium text-secondary">• 최종 순위 결정</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-9 border border-border/30">
+                        <div class="flex justify-between items-center mb-9">
+                            <h3 class="text-h3 font-bold text-primary">시상 대상자 발표</h3>
+                            <span class="text-body-lg font-medium text-secondary">-</span>
+                        </div>
+                        <div class="text-h2 font-extrabold text-primary mb-5">2025년 8월 19일 (화)</div>
+                        <div class="text-body-lg font-medium text-secondary mb-6">홈페이지 공지 및 개별 연락 후 입상 예정자 소집 예정<br>본인 확인 및 풀이 과정 검증으로 확인</div>
+                        <div class="bg-background rounded-2xl p-6">
+                            <h4 class="text-body font-bold text-primary mb-3">발표 절차</h4>
+                            <ul class="space-y-2">
+                                <li class="text-caption font-medium text-secondary">• 홈페이지 공지사항 확인</li>
+                                <li class="text-caption font-medium text-secondary">• 입상 예정자 개별 연락</li>
+                                <li class="text-caption font-medium text-secondary">• 본인 확인 및 검증 과정</li>
+                                <li class="text-caption font-medium text-secondary">• 최종 수상자 확정</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gradient-highlight rounded-3xl p-9 border-0">
+                        <div class="flex justify-between items-center mb-9">
+                            <h3 class="text-h3 font-bold text-primary">시상식</h3>
+                            <span class="text-body-lg font-medium text-secondary">-</span>
+                        </div>
+                        <div class="text-h2 font-extrabold text-primary mb-5">2025년 9월 18일 (목)</div>
+                        <div class="text-body-lg font-medium text-secondary mb-6">순천향대학교 본관 스마트홀</div>
+                        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+                            <h4 class="text-body font-bold text-primary mb-3">시상식 안내</h4>
+                            <ul class="space-y-2">
+                                <li class="text-caption font-medium text-secondary">• 수상자 및 보호자 참석</li>
+                                <li class="text-caption font-medium text-secondary">• 상장 및 상금 수여</li>
+                                <li class="text-caption font-medium text-secondary">• 기념 촬영 및 네트워킹</li>
+                                <li class="text-caption font-medium text-secondary">• 다과 및 축하 행사</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-12 border border-border/30 mt-12">
+                    <h2 class="text-h2 font-bold text-primary mb-8 text-center">주요 일정 요약</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-background rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                <span class="text-body font-bold text-primary">신청 접수</span>
+                            </div>
+                            <span class="text-body font-medium text-secondary">7월 14일 ~ 8월 1일</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-background rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                <span class="text-body font-bold text-primary">예선 (온라인)</span>
+                            </div>
+                            <span class="text-body font-medium text-secondary">8월 8일 ~ 8월 10일</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-background rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                <span class="text-body font-bold text-primary">본선 (오프라인)</span>
+                            </div>
+                            <span class="text-body font-medium text-secondary">8월 17일</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-background rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                <span class="text-body font-bold text-primary">결과 발표</span>
+                            </div>
+                            <span class="text-body font-medium text-secondary">8월 19일</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 gradient-highlight rounded-2xl">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-primary rounded-full mr-4"></div>
+                                <span class="text-body font-bold text-primary">시상식</span>
+                            </div>
+                            <span class="text-body font-medium text-secondary">9월 18일</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-border/30 mt-30">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto py-12 text-center">
+                <p class="text-body font-medium text-secondary">© 2025 YISF 청소년정보보호페스티벌. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

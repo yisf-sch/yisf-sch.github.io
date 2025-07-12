@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대회 소개 - YISF 청소년정보보호페스티벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pretendard': ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#020618',
+                        'secondary': '#45556c',
+                        'background': '#f9fafb',
+                        'border': '#cad5e2'
+                    },
+                    fontSize: {
+                        'display': ['3.5rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h1': ['3rem', { lineHeight: '1.193', letterSpacing: '0' }],
+                        'h2': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'h3': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.75px' }],
+                        'body-lg': ['1.5rem', { lineHeight: '1.2', letterSpacing: '-0.6px' }],
+                        'body': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.5px' }],
+                        'caption': ['1.125rem', { lineHeight: '1.2', letterSpacing: '-0.5px' }]
+                    },
+                    spacing: {
+                        '15': '3.75rem',
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                        '25': '6.25rem',
+                        '30': '7.5rem',
+                        '37.5': '9.375rem'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-pretendard bg-background text-primary">
+    <nav class="bg-white border-b border-border/30 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto flex justify-between items-center py-6">
+                <a href="index.html" class="text-h3 font-black text-primary">YISF</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">홈</a>
+                    <div class="relative group">
+                        <button class="text-body font-medium text-primary border-b-2 border-primary flex items-center">
+                            대회 소개
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-border/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="intro.html" class="block px-4 py-3 text-body font-medium text-primary bg-background">대회 소개</a>
+                            <a href="schedule.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">대회 일정</a>
+                            <a href="organization.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">조직도</a>
+                            <a href="awards.html" class="block px-4 py-3 text-body font-medium text-secondary hover:text-primary hover:bg-background transition-colors">수상 내역</a>
+                        </div>
+                    </div>
+                    <a href="poster.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">포스터</a>
+                    <a href="winners.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">역대 수상자</a>
+                    <a href="apply.html" class="text-body font-medium text-secondary hover:text-primary transition-colors">참가 신청</a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+        <div class="max-w-6xl mx-auto">
+            <header class="py-20 text-center">
+                <h1 class="text-h1 md:text-display font-black text-primary mb-8">대회 소개</h1>
+                <p class="text-body-lg font-medium text-secondary max-w-4xl mx-auto">YISF 청소년정보보호페스티벌의 목적과 개요를 확인하세요</p>
+            </header>
+
+            <section class="my-30">
+                <div class="bg-white rounded-3xl p-12 border border-border/30 mb-12">
+                    <h2 class="text-h2 font-bold text-primary mb-8">대회 개요</h2>
+                    <p class="text-body-lg font-medium text-secondary mb-6 leading-relaxed">
+                        YISF 청소년정보보호페스티벌은 중고등학생들의 정보보호 역량 강화와 보안 의식 함양을 위해 순천향대학교에서 주최하는 대회입니다.
+                    </p>
+                    <p class="text-body-lg font-medium text-secondary leading-relaxed">
+                        다양한 정보보호 관련 문제를 해결하며 실력을 겨루고, 최신 보안 트렌드를 경험할 수 있는 기회를 제공합니다.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white rounded-3xl p-9 border border-border/30">
+                        <h3 class="text-h3 font-bold text-primary mb-6">대회 목적</h3>
+                        <ul class="space-y-4">
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                중고등학생의 정보보호 역량 강화
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                사이버 보안 의식 함양
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                정보보호 전문가 양성
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                최신 보안 트렌드 경험
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-9 border border-border/30">
+                        <h3 class="text-h3 font-bold text-primary mb-6">참가 대상</h3>
+                        <ul class="space-y-4">
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                전국 중학교 재학생
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start">
+                                <span class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                전국 고등학교 재학생
+                            </li>
+                            <li class="text-body font-medium text-secondary flex items-start"> 
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-12 border border-border/30 mb-12">
+                    <h2 class="text-h2 font-bold text-primary mb-8">대회 형식</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-h3 font-bold text-primary mb-4">예선</h4>
+                            <ul class="space-y-3">
+                                <li class="text-body font-medium text-secondary">• 온라인 원격 진행</li>
+                                <li class="text-body font-medium text-secondary">• 36시간 동안 진행</li>
+                                <li class="text-body font-medium text-secondary">• CTF(Capture The Flag) 형식</li>
+                                <li class="text-body font-medium text-secondary">• 다양한 보안 문제 해결</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-h3 font-bold text-primary mb-4">본선</h4>
+                            <ul class="space-y-3">
+                                <li class="text-body font-medium text-secondary">• 오프라인 현장 진행</li>
+                                <li class="text-body font-medium text-secondary">• 8시간 집중 경기</li>
+                                <li class="text-body font-medium text-secondary">• 실시간 문제 해결</li>
+                                <li class="text-body font-medium text-secondary">• 순천향대학교에서 진행</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="bg-white rounded-3xl p-12 border border-border/30">
+                    <h2 class="text-h2 font-bold text-primary mb-8">주최 및 주관</h2>
+                    <div class="text-center">
+                        <div class="mb-6">
+                            <h4 class="text-h3 font-bold text-primary mb-2">주최</h4>
+                            <p class="text-body-lg font-medium text-secondary">순천향대학교</p>
+                        </div>
+                        <div>
+                            <h4 class="text-h3 font-bold text-primary mb-2">주관</h4>
+                            <p class="text-body-lg font-medium text-secondary">순천향대학교 정보보호학과</p>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-border/30 mt-30">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-15 lg:px-37.5">
+            <div class="max-w-6xl mx-auto py-12 text-center">
+                <p class="text-body font-medium text-secondary">© 2025 YISF 청소년정보보호페스티벌. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
